@@ -1,5 +1,5 @@
 var APIKey = "3a86af078e820c30e7a3322768448284";
-//dom element refs
+
 var searchBtnEl = document.getElementById("searchBtn")
 var searchCityEl = document.getElementById("searchCity")
 var boldDataEl = document.getElementById("boldData")
@@ -80,7 +80,7 @@ var getMainData = function (lat, log, cityName) {
                 $(".color").removeClass("green");
                 $(".color").removeClass("red");
             }
-           // 5 day forecast block 
+           
             $(forcastBlock).empty()
             for (let i = 1; i < 6; i++) {
                 let forcastBlock = document.createElement("div")
